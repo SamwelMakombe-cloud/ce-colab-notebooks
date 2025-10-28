@@ -63,9 +63,5 @@ It contains **only source code and demonstration notebooks**.
 
 ##  Citation
 
-If you reference or adapt this work, please cite:
+Makombe, S.C., Ahriz, H., & Obahor, V. (2025). Cyber Essentials — CheckLoop (Colab Notebooks). GitHub repository, Robert Gordon University. https://github.com/SamwelMakombe-cloud/ce-colab-notebooks
 
-> **Makombe, S.C., Ahriz, H., & Obahor, V. (2025).**  
-> *Cyber Essentials — CheckLoop (Colab Notebooks).*  
-> GitHub repository. Commit 533d304.  
-> [https://github.com/SamwelMakombe-cloud/ce-colab-notebooks](https://github.com/SamwelMakombe-cloud/ce-colab-notebooks)
