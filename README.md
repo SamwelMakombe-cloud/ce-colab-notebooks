@@ -39,16 +39,29 @@ It contains **only source code and demonstration notebooks**.
 
 ---
 
-##  Methodology (Summary)
+## Methodology (Summary)
 
-- **Research design** — A **Design Science Research** approach: CE marking guidance encoded deductively; labelled forms analysed inductively via exploratory data analysis; both reconciled through abductive reasoning. The dataset comprises 70 applications (65 development, 5 hold-out).  
-- **Module 1 — Rule engine (closed-form)** — Encodes machine-checkable items (IDs, Yes/No, MCQs) into explicit rules with fixed precedence (**Fail > MIR > Non-Compliant > Compliant**). Outputs include both schema label and rule-ID justification.  
-- **Module 2 — Semantic frames (lists)** — Normalises list answers into slot–value frames (provider, product, version, quantity, role/scope). Validates completeness (e.g., A6.2.x requires version info) and checks software against an end-of-life (EOL) catalogue.  
-- **Module 3 — Rubric-guided LLMs (descriptive)** — Uses **Mistral-7B** and **LLaMA-3.1-8B** prompted with CE-specific rubrics to predict **Compliant / Non-Compliant / MIR**, providing concise rationales. Lightweight **LoRA** adapters enhance domain alignment.  
-- **Fusion & dependencies** — Integrates module outputs using conservative tie-breaking and monotonic cross-question constraints, generating consistent whole-form results.  
-- **Assessor UI (Streamlit)** — Interactive interface for uploading forms, reviewing per-item rationales, applying overrides, and exporting audit artefacts (CSV/JSON/PDF).
+- **Research design.** **Design Science Research**: CE marking guidance is encoded **deductively**; labelled forms are analysed **inductively** via exploratory data analysis; both are reconciled through **abductive** reasoning. Dataset: **70** applications (**65** development, **5** hold-out).
 
-*Pilot evaluation on a held-out set achieved ~0.90 overall accuracy, with the “Compliant” class reaching precision 0.965 / recall 0.932 (F1 = 0.948). Continued work targets minority classes (NC/MIR) via data expansion.*
+- **Module 1 — Rule engine (closed-form).** Machine-checkable items (IDs, Yes/No, MCQs) are mapped to explicit rules with fixed precedence (**Fail > MIR > Non-Compliant > Compliant**). Outputs include the schema label plus a concise **rule-ID** justification.
+
+- **Module 2 — Semantic frames (lists).** List answers are normalised into **slot–value** frames (provider, product, version, quantity, role/scope). The module validates completeness (e.g., A6.2.x requires version info) and checks software against an end-of-life (EOL) catalogue.
+
+- **Module 3 — Rubric-guided LLMs (descriptive).** **Mistral-7B** and **LLaMA-3.1-8B** are prompted with CE-specific rubrics to predict **Compliant / Non-Compliant / MIR** (MIR only where permitted), with a short rationale. Lightweight **LoRA** adapters enhance domain alignment.
+
+- **Explainability (integrated XAI).**  
+  - *Module 1:* rule trace (rule-ID, trigger pattern, matched span)  
+  - *Module 2:* frame trace (extracted slots, missing/invalid fields, EOL findings)  
+  - *Module 3:* rubric rationale + token-level attributions (Integrated Gradients) over the C/NC logits  
+  - *Fusion:* precedence chain and contributing module outputs  
+  All artefacts are visible in the UI and exportable as JSON/CSV.
+
+- **Fusion & dependencies.** Module outputs are integrated with conservative tie-breaking and **monotonic cross-question constraints**, yielding consistent whole-form results.
+
+- **Assessor UI (Streamlit).** Upload forms, review per-item rationales with token highlights, apply overrides, and export audit artefacts (CSV/JSON/PDF).
+
+*Pilot evaluation on a held-out set achieved **~0.90** overall accuracy; the **Compliant** class reached precision **0.965** / recall **0.932** (F1 = **0.948**). Ongoing work targets minority classes (NC/MIR) via data expansion.*
+
 
 ---
 
