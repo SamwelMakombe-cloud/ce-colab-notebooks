@@ -32,6 +32,10 @@ This repository contains the Colab notebooks for **CheckLoop**, an assessor-focu
 
 ---
 
+## Data & privacy
+This repository **does not** include real Cyber Essentials forms or any confidential material.  
+Only **code and notebooks** are provided.
+
 ## Methodology (summary)
 
 - **Research design.** Pragmatist **Design Science Research**: deductively encode CE marking guidance; use exploratory data analysis on labelled forms; connect both via abductive reasoning to shape the hybrid architecture. Dataset split: development vs assessor-marked hold-out.
@@ -54,6 +58,17 @@ This repository contains the Colab notebooks for **CheckLoop**, an assessor-focu
 
 ---
 
-## Citation
+## Authors & contributors
+- **Samwel Christopher Makombe** — lead developer & maintainer  
+- **Hatem Ahriz** — conceptualization, supervision, methodology  
+- **Victor Obahor** — domain expertise, data access, validation
 
-Makombe, S.C. (2025). *Assessor-Focused Automation of Cyber Essentials Compliance via Rule Logic and Semantic LLMs*. MSc Data Science, Robert Gordon University.
+## Citation
+If you use this repository, please cite the software and the dissertation/paper.
+
+**\bibitem style (for LNCS-like bibliographies):**
+```tex
+\bibitem{CheckLoopNotebooks}
+Makombe, S.C., Ahriz, H., and Obahor, V.: Cyber Essentials — CheckLoop (Colab Notebooks).
+GitHub repository; commit \texttt{533d304}.
+\url{https://github.com/SamwelMakombe-cloud/ce-colab-notebooks} (accessed: 28 Oct 2025)
