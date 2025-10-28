@@ -1,74 +1,79 @@
 # Cyber Essentials — CheckLoop (Colab Notebooks)
 
-**Repository:** SamwelMakombe-cloud/ce-colab-notebooks  
+**Repository:** [SamwelMakombe-cloud/ce-colab-notebooks](https://github.com/SamwelMakombe-cloud/ce-colab-notebooks)  
 **Author:** Samwel Christopher Makombe
 
-This repository contains the Colab notebooks for **CheckLoop**, an assessor-focused pipeline that combines rule logic, semantic information extraction, and rubric-guided LLMs to support consistent, explainable Cyber Essentials (CE) assessments.
+This repository contains Google Colab notebooks for **CheckLoop**, an assessor-focused automation pipeline that integrates rule-based logic, semantic information extraction, and rubric-guided large language models (LLMs) to support consistent and explainable Cyber Essentials (CE) assessments.
 
 ---
 
-## Notebooks
+##  Notebooks
 
 | Stage | Notebook file | Open in Colab | Purpose |
-|---|---|---|---|
-| 1 | `Data_Preparation_and_Exploration_for_development_corpus_CLEAN_WITH_OUTPUTS.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/Data_Preparation_and_Exploration_for_development_corpus_CLEAN_WITH_OUTPUTS.ipynb) | Load and explore the development corpus; structure questions, answers, and notes for downstream modules. |
-| 2 | `data_augmentation_&_balance_for_descriptive_data_CLEAN_WITH_OUTPUTS.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/data_augmentation_&_balance_for_descriptive_data_CLEAN_WITH_OUTPUTS.ipynb) | Class balancing and augmentation for descriptive items while preserving label integrity. |
-| 3 | `Rules_SemanticFrames_Extraction_1_CLEAN_WITH_OUTPUTS.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/Rules_SemanticFrames_Extraction_1_CLEAN_WITH_OUTPUTS.ipynb) | Encode CE marking rules (CFG) and extract semantic frames/entities (spaCy + SRL) aligned to the marking guide. |
-| 4 | `zero_shot_VS_finetune_Mistral_7B_with_rubrics_FENCES_STRICT_SAFE_WITH_OUTPUTS.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/zero_shot_VS_finetune_Mistral_7B_with_rubrics_FENCES_STRICT_SAFE_WITH_OUTPUTS.ipynb) | Compare zero-shot vs fine-tuned **Mistral-7B** under CE-specific rubrics; safe rendering for GitHub. |
-| 5 | `zeroshot_fine_tuned_LLaMA_8B_with_rubrics_4_CLEAN_WITH_OUTPUTS.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/zeroshot_fine_tuned_LLaMA_8B_with_rubrics_4_CLEAN_WITH_OUTPUTS.ipynb) | Evaluate **LLaMA-3.1-8B** with CE-specific rubric prompts; report comparisons and metrics. |
-| 6 | `INFERENCE_ON_UNSEEN_DATA_CLEAN_WITH_OUTPUTS.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/INFERENCE_ON_UNSEEN_DATA_CLEAN_WITH_OUTPUTS.ipynb) | Run the full inference pipeline on held-out forms; save predictions and supporting explanations. |
-| 7 | `streamlitdeployment_clean.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/streamlitdeployment_clean.ipynb) | Launch the Streamlit demo (assessor UI, overrides, exportable audit artefacts). |
+|:--:|:--|:--|:--|
+| 1 | `Data_Preparation_and_Exploration_for_development_corpus_CLEAN_WITH_OUTPUTS.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/Data_Preparation_and_Exploration_for_development_corpus_CLEAN_WITH_OUTPUTS.ipynb) | Loads and explores the development corpus, structuring questions, answers, and notes for downstream modules. |
+| 2 | `data_augmentation_&_balance_for_descriptive_data_CLEAN_WITH_OUTPUTS.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/data_augmentation_&_balance_for_descriptive_data_CLEAN_WITH_OUTPUTS.ipynb) | Performs class balancing and data augmentation for descriptive answers while preserving label integrity. |
+| 3 | `Rules_SemanticFrames_Extraction_1_CLEAN_WITH_OUTPUTS.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/Rules_SemanticFrames_Extraction_1_CLEAN_WITH_OUTPUTS.ipynb) | Encodes CE marking rules (CFG) and extracts semantic frames and entities (spaCy + SRL) aligned to the marking guide. |
+| 4 | `zero_shot_VS_finetune_Mistral_7B_with_rubrics_FENCES_STRICT_SAFE_WITH_OUTPUTS.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/zero_shot_VS_finetune_Mistral_7B_with_rubrics_FENCES_STRICT_SAFE_WITH_OUTPUTS.ipynb) | Compares zero-shot and fine-tuned **Mistral-7B** models under CE-specific rubrics (safe rendering for GitHub). |
+| 5 | `zeroshot_fine_tuned_LLaMA_8B_with_rubrics_4_CLEAN_WITH_OUTPUTS.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/zeroshot_fine_tuned_LLaMA_8B_with_rubrics_4_CLEAN_WITH_OUTPUTS.ipynb) | Evaluates **LLaMA-3.1-8B** using CE-specific rubric prompts and reports comparative performance metrics. |
+| 6 | `INFERENCE_ON_UNSEEN_DATA_CLEAN_WITH_OUTPUTS.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/INFERENCE_ON_UNSEEN_DATA_CLEAN_WITH_OUTPUTS.ipynb) | Runs the full inference pipeline on held-out forms and saves predictions with explanatory outputs. |
+| 7 | `streamlitdeployment_clean.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SamwelMakombe-cloud/ce-colab-notebooks/blob/main/streamlitdeployment_clean.ipynb) | Launches the Streamlit assessor interface with override logging and exportable audit artefacts. |
 
-> If a link 404s, confirm the filename in the repo matches exactly (including case and symbols).
-
----
-
-## Project objectives
-
-- **Consistency with defensible rationales.** Reduce assessor-to-assessor variability by combining deterministic checks, structured list validation, and rubric-guided LLM scoring. Every decision is accompanied by a concise reason (rule ID, recovered frame, or rubric-aligned rationale).
-- **Human-in-the-loop control.** Surface explanations for each judgement and allow assessor overrides with audit logging, so automation accelerates review without removing expert judgement.
-- **Dependable whole-form outcomes.** Apply conservative fusion and cross-question constraints (for example, missing A6.2.x versions escalate to MIR; firewall “No” cascades to dependent items) to avoid inconsistent states.
-- **Pre-assessment and transparency.** Support applicant self-checks and provide a reference for scheme-level monitoring of assessor consistency.
+> If a link returns a 404 error, confirm that the notebook name and capitalization in the repository match exactly.
 
 ---
 
-## Data & privacy
-This repository **does not** include real Cyber Essentials forms or any confidential material.  
-Only **code and notebooks** are provided.
+##  Project Objectives
 
-## Methodology (summary)
-
-- **Research design.** Pragmatist **Design Science Research**: deductively encode CE marking guidance; use exploratory data analysis on labelled forms; connect both via abductive reasoning to shape the hybrid architecture. Dataset split: development vs assessor-marked hold-out.
-- **Module 1 — Rule engine (closed-form).** Machine-checkable items (IDs, yes/no, some MCQs) mapped to explicit rules with fixed precedence (**Fail > MIR > Non-Compliant > Compliant**). Outputs include the schema label and the minimal rule-ID reason.
-- **Module 2 — Semantic frames (lists).** Normalise list answers into slot–value frames (provider, product, version, quantity, role/scope). Validate completeness (e.g., A6.2.x requires versions) and verify software against end-of-life catalogues.
-- **Module 3 — Rubric-guided LLMs (descriptive).** Prompt **Mistral-7B** and **LLaMA-3.1-8B** with CE-specific rubrics to produce **Compliant/Non-Compliant** (and **More Information Required** only where permitted) with a short justification; optional LoRA adapters improve domain alignment.
-- **Fusion & dependencies.** Reconcile module outputs with conservative tie-breaking and monotonic cross-question constraints; produce a clear per-form summary.
-- **Assessor UI (Streamlit).** Upload a form, inspect per-item rationales, record overrides, and export audit artefacts (CSV/JSON/PDF).
-
-*Pilot results on a small hold-out set show strong performance on the Compliant class (high precision/recall), with targeted improvements planned for minority classes (NC/MIR).*
+- **Consistency with defensible rationales** — Reduce assessor-to-assessor variability by combining deterministic rule checks, structured list validation, and rubric-guided LLM scoring. Each judgement includes an explicit rationale (rule ID, recovered frame, or rubric-aligned explanation).  
+- **Human-in-the-loop control** — Present transparent reasoning for every automated judgement and allow assessors to override outputs with full audit logging, ensuring automation assists rather than replaces expert review.  
+- **Dependable whole-form outcomes** — Apply conservative fusion and cross-question logic (e.g., missing A6.2.x versions → MIR; firewall “No” → downgrades dependent items) to avoid contradictory results.  
+- **Pre-assessment and transparency** — Support applicant self-checks and enable scheme-level monitoring of assessor consistency.
 
 ---
 
-## How to use
+##  Data & Privacy
 
-1. Open any notebook via the **Colab** badge above.  
-2. If notebooks reference Google Drive data, run the first cell to mount Drive and adjust paths as needed.  
-3. Follow the per-notebook instructions (install prerequisites, run cells in order).  
-4. For the Streamlit demo, the notebook guides you through launching the app.
+This repository **does not** include any real Cyber Essentials applications or confidential material.  
+It contains **only source code and demonstration notebooks**.
 
 ---
 
-## Authors & contributors
-- **Samwel Christopher Makombe** — lead developer & maintainer  
-- **Hatem Ahriz** — conceptualization, supervision, methodology  
-- **Victor Obahor** — domain expertise, data access, validation
+##  Methodology (Summary)
 
-## Citation
-If you use this repository, please cite the software and the dissertation/paper.
+- **Research design** — A **Design Science Research** approach: CE marking guidance encoded deductively; labelled forms analysed inductively via exploratory data analysis; both reconciled through abductive reasoning. The dataset comprises 70 applications (65 development, 5 hold-out).  
+- **Module 1 — Rule engine (closed-form)** — Encodes machine-checkable items (IDs, Yes/No, MCQs) into explicit rules with fixed precedence (**Fail > MIR > Non-Compliant > Compliant**). Outputs include both schema label and rule-ID justification.  
+- **Module 2 — Semantic frames (lists)** — Normalises list answers into slot–value frames (provider, product, version, quantity, role/scope). Validates completeness (e.g., A6.2.x requires version info) and checks software against an end-of-life (EOL) catalogue.  
+- **Module 3 — Rubric-guided LLMs (descriptive)** — Uses **Mistral-7B** and **LLaMA-3.1-8B** prompted with CE-specific rubrics to predict **Compliant / Non-Compliant / MIR**, providing concise rationales. Lightweight **LoRA** adapters enhance domain alignment.  
+- **Fusion & dependencies** — Integrates module outputs using conservative tie-breaking and monotonic cross-question constraints, generating consistent whole-form results.  
+- **Assessor UI (Streamlit)** — Interactive interface for uploading forms, reviewing per-item rationales, applying overrides, and exporting audit artefacts (CSV/JSON/PDF).
 
-**\bibitem style (for LNCS-like bibliographies):**
-```tex
-\bibitem{CheckLoopNotebooks}
-Makombe, S.C., Ahriz, H., and Obahor, V.: Cyber Essentials — CheckLoop (Colab Notebooks).
-GitHub repository; commit \texttt{533d304}.
-\url{https://github.com/SamwelMakombe-cloud/ce-colab-notebooks} (accessed: 28 Oct 2025)
+*Pilot evaluation on a held-out set achieved ~0.90 overall accuracy, with the “Compliant” class reaching precision 0.965 / recall 0.932 (F1 = 0.948). Continued work targets minority classes (NC/MIR) via data expansion.*
+
+---
+
+##  How to Use
+
+1. Open any notebook via its **Open in Colab** badge above.  
+2. If required, mount Google Drive in the first cell and adjust data paths.  
+3. Execute cells sequentially following each notebook’s embedded instructions.  
+4. For the Streamlit demo, run the final notebook to launch the local web app.
+
+---
+
+##  Authors & Contributors
+
+- **Samwel Christopher Makombe** — Lead developer & maintainer  
+- **Dr Hatem Ahriz** — Conceptualisation, supervision, and methodology guidance  
+- **Victor Obahor** — Domain expertise, data access, and validation support
+
+---
+
+##  Citation
+
+If you reference or adapt this work, please cite:
+
+> **Makombe, S.C., Ahriz, H., & Obahor, V. (2025).**  
+> *Cyber Essentials — CheckLoop (Colab Notebooks).*  
+> GitHub repository. Commit 533d304.  
+> [https://github.com/SamwelMakombe-cloud/ce-colab-notebooks](https://github.com/SamwelMakombe-cloud/ce-colab-notebooks)
