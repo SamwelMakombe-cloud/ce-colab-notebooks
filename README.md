@@ -52,20 +52,12 @@ It contains **only source code and demonstration notebooks**.
 
 ---
 
-##  How to Use
-
-1. Open any notebook via its **Open in Colab** badge above.  
-2. If required, mount Google Drive in the first cell and adjust data paths.  
-3. Execute cells sequentially following each notebook’s embedded instructions.  
-4. For the Streamlit demo, run the final notebook to launch the local web app.
-
----
-
 ##  Authors & Contributors
 
-- **Samwel Christopher Makombe** — Lead developer & maintainer  
-- **Dr Hatem Ahriz** — Conceptualisation, supervision, and methodology guidance  
-- **Victor Obahor** — Domain expertise, data access, and validation support
+- **Samwel Christopher Makombe** — Lead developer, primary author, and maintainer of all code and notebooks  
+- **Dr Hatem Ahriz** — Academic supervisor, methodology and conceptual guidance  
+- **Victor Obahor** — Industry collaborator, domain validation and data access support
+
 
 ---
 
