@@ -49,7 +49,7 @@ It contains **only source code and demonstration notebooks**.
 
 - **Module 3 — Rubric-guided LLMs (descriptive).** **Mistral-7B** and **LLaMA-3.1-8B** are prompted with CE-specific rubrics to predict **Compliant / Non-Compliant / MIR** (MIR only where permitted), with a short rationale. Lightweight **LoRA** adapters enhance domain alignment.
 
-- **Explainability (integrated XAI).**  
+- **Explainability.**  
   - *Module 1:* rule trace (rule-ID, trigger pattern, matched span)  
   - *Module 2:* frame trace (extracted slots, missing/invalid fields, EOL findings)  
   - *Module 3:* rubric rationale + token-level attributions (Integrated Gradients) over the C/NC logits  
